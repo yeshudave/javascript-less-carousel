@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Javascript-less Carousel</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/modules.css">
   <link rel="stylesheet" href="css/type.css">
@@ -13,47 +13,46 @@
   <section class="max-length">
 
     <div class="carousel">
+      <input class="carousel-input" type="radio" name="mammals" id="arsinoitherium-control" checked>
+      <input class="carousel-input" type="radio" name="mammals" id="elasmotherium-control">
+      <input class="carousel-input" type="radio" name="mammals" id="glyptodon-control">
+      <input class="carousel-input" type="radio" name="mammals" id="megatherium-control">
 
       <div class="carousel-inner relative">
-        <input class="carousel-input" type="radio" name="mammals" value="arsinoitherium-control">
-        <input class="carousel-input" type="radio" name="mammals" value="elasmotherium-control">
-        <input class="carousel-input" type="radio" name="mammals" value="glyptodon-control">
-        <input class="carousel-input" type="radio" name="mammals" value="megatherium-control">
+        <div class="carousel-items">
 
-        <div class="carousel-item embed embed-golden" id="arsinoitherium">
-          <img class="embed-item" src="images/arsinoitherium.jpg" alt="">
+          <div class="carousel-item embed embed-golden" id="arsinoitherium">
+            <img class="embed-item" src="images/arsinoitherium.jpg" alt="">
+          </div>
+          <div class="carousel-item embed embed-golden" id="elasmotherium">
+            <img class="embed-item" src="images/elasmotherium.jpg" alt="">
+          </div>
+          <div class="carousel-item embed embed-golden" id="glyptodon">
+            <img class="embed-item" src="images/glyptodon.jpg" alt="">
+          </div>
+          <div class="carousel-item embed embed-golden" id="megatherium">
+            <img class="embed-item" src="images/megatherium.jpg" alt="">
+          </div>
+
         </div>
 
-        <div class="carousel-item embed embed-golden" id="elasmotherium">
-          <img class="embed-item" src="images/elasmotherium.jpg" alt="">
-        </div>
+        <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="arsinoitherium-control">Arsinoitherium</label>
+          </li>
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="elasmotherium-control">Elasmotherium</label>
+          </li>
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="glyptodon-control">Glyptodon</label>
+          </li>
+          <li>
+            <label class="carousel-btn icon i-18 ir" for="megatherium-control">Megatherium</label>
+          </li>
+        </ul>
 
-        <div class="carousel-item embed embed-golden" id="glyptodon">
-          <img class="embed-item" src="images/glyptodon.jpg" alt="">
-        </div>
-
-        <div class="carousel-item embed embed-golden" id="megatherium">
-          <img class="embed-item" src="images/megatherium.jpg" alt="">
-        </div>
       </div>
-
-      <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
-        <li>
-          <label class="carousel-btn icon i-18 ir" for="arsinoitherium-control">Arsinoitherium</label>
-        </li>
-        <li>
-          <label class="carousel-btn icon i-18 ir" for="elasmotherium-control">Elasmotherium</label>
-        </li>
-        <li>
-          <label class="carousel-btn icon i-18 ir" for="glyptodon-control">Glyptodon</label>
-        </li>
-        <li>
-          <label class="carousel-btn icon i-18 ir" for="megatherium-control">Megatherium</label>
-        </li>
-      </ul>
-
     </div>
-
   </section>
 
 </body>
